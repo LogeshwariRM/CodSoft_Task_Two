@@ -23,7 +23,3 @@ It includes attractive visuals, facts, and an engaging design to provide users w
 ## 🛠️ Tech Stack
 - HTML  
 - CSS  
-
----  
-   ```bash
-   git clone https://github.com/your-username/paris-landing-page.git
