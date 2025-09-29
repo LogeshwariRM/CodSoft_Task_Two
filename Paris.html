@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Paris</title>
+    <link rel="stylesheet" href="Paris.css">
+</head>
+<body>
+    <!-- Hero Section -->
+  <header>
+    <h1>Welcome to Paris</h1>
+    <p>The City of Light, Love, and History</p>
+    <a href="#about" class="btn">Explore Paris</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Paris</h2>
+    <div class="about">
+      <div>
+        <p>Paris, the capital of France, is renowned for its art, fashion, gastronomy, and culture.
+             The city boasts iconic landmarks like the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum, attracting millions of visitors every year. 
+             Paris is also famous for its charming streets, cafés, and rich history dating back over 2,000 years.</p>
+            Paris is a major railway, highway, and air-transport hub served by three international airports: Charles de Gaulle Airport, Orly Airport, and Beauvais–Tillé Airport.
+            Paris has one of the most sustainable transportation systems and is one of only two cities in the world that received the Sustainable Transport Award twice. 
+            Paris is known for its museums and architectural landmarks: the Musée d'Orsay, Musée Marmottan Monet, and Musée de l'Orangerie are noted for their collections of French Impressionist art.
+            The Pompidou Centre, Musée National d'Art Moderne, Musée Rodin and Musée Picasso are noted for their collections of modern and contemporary art.
+            Part of the city along the Seine has been classified as a UNESCO World Heritage Site since 1991.
+            The name Paris is derived from its early inhabitants, the Parisii, a Gallic tribe from the Iron Age and the Roman period.
+            The meaning of the Gaulish ethnonym remains debated.
+            According to Xavier Delamarre, it may derive from the Celtic root pario- ('cauldron').
+            Alfred Holder interpreted the name as 'the makers' or 'the commanders', by comparing it to the Welsh peryff ('lord, commander'), both possibly descending from a Proto-Celtic form reconstructed as kwar-is-io-. 
+            Alternatively, Pierre-Yves Lambert proposed to translate Parisii as the 'spear people', by connecting the first element to the Old Irish carr ('spear'), derived from an earlier *kwar-sā.
+            Residents of the city are known in English as Parisians and in French as Parisiens. They are also pejoratively called Parigots.
+            Paris is located in northern central France, in a north-bending arc of the river Seine, whose crest includes two islands, the Île Saint-Louis and the larger Île de la Cité, which form the oldest part of Paris.
+            The river's mouth on the English Channel (La Manche) is about 233 mi (375 km) downstream from Paris. Paris is spread widely on both banks of the river.
+            Overall, Paris is relatively flat, and the lowest point is 35 m (115 ft) above sea level. 
+            Paris has several prominent hills, the highest of which is Montmartre at 130 m (427 ft).
+        </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Eiffel Tower">
+    </div>
+  </section>
+
+  <!-- Facts Section -->
+  <section id="facts">
+    <h2>Interesting Facts</h2>
+    <div class="facts">
+      <div>
+        <h3>Eiffel Tower</h3>
+        <p>Built in 1889, it is one of the most visited monuments in the world.</p>
+      </div>
+      <div>
+        <h3>Louvre Museum</h3>
+        <p>Home to over 35,000 works of art, including the Mona Lisa.</p>
+      </div>
+      <div>
+        <h3>Seine River</h3>
+        <p>Paris is divided by the Seine River, famous for scenic boat cruises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Paris Gallery</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/250px-Notre-Dame_de_Paris%2C_4_October_2017.jpg" alt="Notre Dame">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCg6ALDRAaHE5T4hP4xbg5SippYkW5meHxTw&s" alt="Sacré-Cœur">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIgf4yY5t5EejjR4myorzC1yEjRIxzsW9ZQ&s" alt="Arc de Triomphe">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/1200px-Sydney_Australia._%2821339175489%29.jpg" alt="Opera House">
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Subscribe for Paris Updates</h2>
+    <p>Get tips, travel ideas, and the latest news about Paris directly in your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Discover Paris | Designed by Logeshwari</p>
+  </footer>
+
+  <script>
+    // Animate sections when scrolling into view
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
